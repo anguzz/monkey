@@ -6,11 +6,14 @@
         content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 </head>
   
 <body>
-    <div class=prompt>Press the Button</div>
+    <div class=prompt>
+        Bonk the monkey
+      <img src="face.png" style="width: 64px; height: 64px;">
+    </div>
   
     <div class="container">
       <img id="monk" src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()" />
@@ -18,12 +21,15 @@
   
     <script>
         function play() {
-            var audio = new Audio('./Sounds/monkeyscream1.wav');
+            var randomNumber = Math.floor(Math.random() * 9) + 1; // generate a random number between 1 and 9
+            var audio = new Audio(`./Sounds/monkeyscream${randomNumber}.wav`); // construct the file path using the random number
             audio.play();
             const rotated = document.getElementById('monk');
             rotated.style.transform = `rotate(${Math.random() * 360}deg)`;
-            rotated.style.top = Math.random() * window.innerHeight;
-            rotated.style.right = Math.random() * window.innerWidth;
+            const w = Math.random() * window.innerWidth;
+            const h = Math.random() * window.innerHeight;
+            rotated.style.top = `${Math.min(Math.max(100, w), window.innerHeight - 200)}px`;
+            rotated.style.right = `${Math.min(Math.max(100, h), window.innerWidth - 200)}px`;
         }
     </script>
 </body>

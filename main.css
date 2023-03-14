@@ -7,7 +7,8 @@ html, body {
   background-size: cover;
   image-rendering: pixelated;
   overflow: hidden;
-  font-family: "MedievalSharp";
+  font-family: 'Allerta Stencil';font-size: 22px;
+  cursor: url("./face.png"), auto;
 
   /* background-repeat: no-repeat; */
 
@@ -15,12 +16,13 @@ html, body {
 
 .prompt {
   font-size: xx-large;
-  color:white;
-  background-color: rgb(38, 159, 119);
+  color:rgb(64, 225, 168);
+  background-color: rgb(2, 107, 72);
   width: 25%;
   margin:auto;
   text-align:center;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 h1 {
