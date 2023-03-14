@@ -7,13 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <script> let count = 0;</script>
 </head>
   
 <body>
     <div class=prompt>
         Bonk the monke
       <img src="face.png" style="width: 64px; height: 64px;">
+        <p id="counter">Clicks: </p>
     </div>
+
   
     <div class="container">
       <img id="monk" src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()" />
@@ -30,6 +33,9 @@
             const h = Math.random() * window.innerHeight;
             rotated.style.top = `${Math.min(Math.max(100, w), window.innerHeight - 200)}px`;
             rotated.style.right = `${Math.min(Math.max(100, h), window.innerWidth - 200)}px`;
+            const counter = document.getElementById("counter");
+            count += 1;
+            counter.innerText = "Clicks: " + count;
         }
     </script>
 </body>
