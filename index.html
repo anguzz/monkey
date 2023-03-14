@@ -6,10 +6,11 @@
         content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
 </head>
   
 <body>
-    <h1>Press the Button</h1>
+    <div class=prompt>Press the Button</div>
   
     <div class="container">
       <img id="monk" src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()" />
@@ -21,6 +22,8 @@
             audio.play();
             const rotated = document.getElementById('monk');
             rotated.style.transform = `rotate(${Math.random() * 360}deg)`;
+            rotated.style.top = Math.random() * window.innerHeight;
+            rotated.style.right = Math.random() * window.innerWidth;
         }
     </script>
 </body>
