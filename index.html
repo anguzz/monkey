@@ -5,18 +5,22 @@
     <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
   
 <body>
     <h1>Press the Button</h1>
   
-    <img src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()">
-    <img />
+    <div class="container">
+      <img id="monk" src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()" />
+    </div>
   
     <script>
         function play() {
             var audio = new Audio('./Sounds/monkeyscream1.wav');
             audio.play();
+            const rotated = document.getElementById('monk');
+            rotated.style.transform = `rotate(${Math.random() * 360}deg)`;
         }
     </script>
 </body>
