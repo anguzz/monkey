@@ -6,9 +6,27 @@ html, body {
   background-image: url("background.png");
   background-size: cover;
   image-rendering: pixelated;
+<<<<<<< HEAD
   background-repeat: no-repeat;
   scroll-behavior: unset;
   overflow: hidden;
+=======
+  overflow: hidden;
+  font-family: "MedievalSharp";
+
+  /* background-repeat: no-repeat; */
+
+}
+
+.prompt {
+  font-size: xx-large;
+  color:white;
+  background-color: rgb(38, 159, 119);
+  width: 25%;
+  margin:auto;
+  text-align:center;
+  border-radius: 10px;
+>>>>>>> refs/remotes/origin/main
 }
 
 h1 {
@@ -18,10 +36,26 @@ h1 {
 .container {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
 
+=======
+>>>>>>> refs/remotes/origin/main
 }
 
+#monk {
+  position: absolute;
+  top: 200px;
+  right: 500px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efeeab;
+}
