@@ -38,6 +38,8 @@ h1 {
   position: absolute;
   top: 200px;
   right: 500px;
+  cursor: url('./bat.png'), auto;
+
 }
 
 ::-webkit-scrollbar {
