@@ -8,7 +8,7 @@ html, body {
   image-rendering: pixelated;
   overflow: hidden;
   font-family: 'Allerta Stencil';font-size: 22px;
-  cursor: url("./face.png"), auto;
+  cursor: url('./bat.png'), auto;
 
   /* background-repeat: no-repeat; */
 
