@@ -7,7 +7,8 @@ html, body {
   background-size: cover;
   image-rendering: pixelated;
   background-repeat: no-repeat;
-
+  scroll-behavior: unset;
+  overflow: hidden;
 }
 
 h1 {
@@ -20,5 +21,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+
 }
 
