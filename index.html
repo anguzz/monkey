@@ -10,12 +10,12 @@
 <body>
     <h1>Press the Button</h1>
   
-    <button onclick="play()">Press Here!</button>
+    <img src="./monkey.png" alt="monkey" height="300" width="200" onclick="play()">
+    <img />
   
     <script>
         function play() {
-            var audio = new Audio(
-'http://sfxcontent.s3.amazonaws.com/soundfx/Spring-Boing.mp3');
+            var audio = new Audio('./Sounds/monkeyscream1.wav');
             audio.play();
         }
     </script>
